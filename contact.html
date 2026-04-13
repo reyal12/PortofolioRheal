@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kontak</title>
+  <meta name="description" content="Hubungi saya untuk proyek, kolaborasi, atau sekadar ngobrol." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Portofolio<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Pengalaman</a>
+        <a href="contact.html">Kontak</a>
+        <button class="btn-theme" title="Toggle tema">☀️</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  <main style="padding-top: var(--nav-h)">
+
+   
+    <section class="section">
+      <div class="container">
+
+       
+        <div class="section-header fade-in">
+       
+          <div class="section-label">Mari Terhubung</div>
+          <h1 class="section-title">Hubungi Saya</h1>
+          <p class="section-subtitle">
+            Punya project menarik? Ingin berkolaborasi? Atau sekadar ingin ngobrol?
+            Jangan ragu untuk menghubungi saya!
+          </p>
+        </div>
+
+       
+        <div class="contact-grid">
+
+          
+          <div class="fade-in">
+
+           
+            <h2 style="font-size:1.5rem;margin-bottom:0.75rem">
+              Ayo ngobrol! 👋
+            </h2>
+            <p style="color:var(--clr-muted);font-size:0.9rem;margin-bottom:2rem;line-height:1.8">
+             
+              Saya selalu terbuka untuk diskusi project baru, ide kreatif, atau kesempatan
+              untuk berkolaborasi. Respon dalam 1-2 hari kerja.
+            </p>
+
+          
+            <div>
+
+     
+              <div class="contact-info-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-detail">
+                  <div class="label">Email</div>
+                  <div class="value">
+                    <a data-email href="#" style="color:var(--clr-accent)">
+                      rheal.rir@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+        
+              <div class="contact-info-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-detail">
+                  <div class="label">Telepon / WhatsApp</div>
+                  <div class="value" data-phone>+62 812 3456 7890</div>
+                </div>
+              </div>
+
+            
+              <div class="contact-info-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-detail">
+                  <div class="label">Lokasi</div>
+                  <div class="value" data-location>Jakarta, Indonesia</div>
+                </div>
+              </div>
+
+      
+              <div class="contact-info-item">
+                <div class="contact-icon">🟢</div>
+                <div class="contact-detail">
+                  <div class="label">Status</div>
+                 
+                  <div class="value" style="color:var(--clr-accent)">Tersedia untuk Freelance</div>
+                </div>
+              </div>
+
+              
+              <div class="contact-info-item">
+                <div class="contact-icon">🕐</div>
+                <div class="contact-detail">
+                  <div class="label">Jam Kerja</div>
+                  
+                  <div class="value">Sen–Jum, 09.00–18.00 WIB</div>
+                </div>
+              </div>
+
+            </div>
+
+            
+            <div class="social-row">
+  <a class="social-btn" href="#" data-github target="_blank" rel="noopener" title="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a class="social-btn" href="#" data-linkedin target="_blank" rel="noopener" title="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a class="social-btn" href="#" data-instagram target="_blank" rel="noopener" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  
+</div>
+
+          </div>
+          
+          <div class="fade-in">
+            <div class="contact-form">
+
+              
+              <h3 style="font-size:1.3rem;margin-bottom:0.25rem">Kirim Pesan</h3>
+              <p style="font-size:0.85rem;color:var(--clr-muted);margin-bottom:2rem">
+                Isi form di bawah ini dan saya akan segera membalas.
+              </p>
+
+              
+              <form id="contact-form" novalidate>
+
+               
+                <div class="form-group">
+                  <label class="form-label" for="name">Nama Lengkap *</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Masukkan nama lengkap Anda"
+                    autocomplete="name"
+                  />
+                  <span class="field-error" id="name-error"></span>
+                </div>
+
+                
+                <div class="form-group">
+                  <label class="form-label" for="email">Alamat Email *</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="nama@email.com"
+                    autocomplete="email"
+                  />
+                  <span class="field-error" id="email-error"></span>
+                </div>
+
+                
+                <div class="form-group">
+                  <label class="form-label" for="subject">Subjek</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Topik pesan Anda"
+                  />
+                </div>
+
+               
+                <div class="form-group">
+                 
+                  <label class="form-label" for="service">Jenis Kebutuhan</label>
+                  <select class="form-control" id="service" name="service">
+                   
+                    <option value="">— Pilih jenis kebutuhan —</option>
+                    <option value="web">Website / Web App</option>
+                    <option value="mobile">Aplikasi Mobile</option>
+                    <option value="design">UI/UX Design</option>
+                    <option value="consult">Konsultasi</option>
+                    <option value="other">Lainnya</option>
+                  </select>
+                </div>
+
+               
+                <div class="form-group">
+                  <label class="form-label" for="message">Pesan *</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Ceritakan project atau kebutuhan Anda secara singkat..."
+                  ></textarea>
+                  <span class="field-error" id="message-error"></span>
+                  <span style="font-size:0.75rem;color:var(--clr-muted)">Minimal 20 karakter</span>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+                  📨 Kirim Pesan
+                </button>
+
+                
+                <div class="form-success">
+                  ✅ Pesan berhasil dikirim! Saya akan segera membalas.
+                </div>
+
+              </form>
+              
+
+            </div>
+          </div>
+         
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+ 
+  <footer>
+      <div class="footer-inner">
+  <div class="footer-brand">Portofolio<span>.</span></div>
+  <div style="display: flex; gap: 0.75rem">
+    <a class="social-btn" href="#" data-github target="_blank" rel="noopener">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="social-btn" href="#" data-linkedin target="_blank" rel="noopener">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="social-btn" href="#" data-instagram target="_blank" rel="noopener">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
